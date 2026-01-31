@@ -16,7 +16,6 @@ const projects = [
         title: "Morgan Rice", 
         description: "Official website for the author Morgan Rice. Built with a focus on user experience and brand identity.", 
         url: "https://morganrice.net/",
-        // Placeholder gris oscuro elegante
         image: "https://placehold.co/600x400/2c3e50/ffffff?text=Morgan+Rice" 
     },
     { 
@@ -24,7 +23,6 @@ const projects = [
         title: "The Richards Group", 
         description: "Corporate website design ensuring functionality and an attractive user interface.", 
         url: "https://therichardsgroup.co/",
-        // Placeholder azul corporativo
         image: "https://placehold.co/600x400/007BFF/ffffff?text=The+Richards+Group" 
     },
     { 
@@ -32,7 +30,6 @@ const projects = [
         title: "Team Roastarr", 
         description: "A visually appealing platform created to bring across the client's message creatively.", 
         url: "https://teamroastarr.com/",
-        // Placeholder naranja energético
         image: "https://placehold.co/600x400/e67e22/ffffff?text=Team+Roastarr" 
     }
 ];
@@ -40,7 +37,7 @@ const projects = [
 // Skills Data
 const skills = [
     "HTML5", "CSS3", "JavaScript", "Next.js", "Express.js", 
-    "Python", "Java", "C++", "Elementor", "Divi", "Wix", "Git" // Agregué Git para completar 12 y que quede 6 y 6
+    "Python", "Java", "C++", "Elementor", "Divi", "Wix", "Git"
 ];
 
 
