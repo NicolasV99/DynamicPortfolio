@@ -32,6 +32,24 @@ app.get('/contact', (req, res) => {
     res.render('contact', { pageTitle: "Contáctame" });
 });
 
+// ... (tus rutas anteriores de GET) ...
+
+// RUTA PARA PROCESAR EL FORMULARIO (POST)
+app.post('/contact', (req, res) => {
+    // Capturamos el dato que escribió el usuario (gracias a body-parser)
+    const nombreUsuario = req.body.userName;
+    
+    // Renderizamos una respuesta personalizada (Podrías crear una vista 'success.ejs' si prefieres)
+    // Aquí usamos res.send para simplificar y mostrar HTML directo generado por el servidor
+    res.send(`
+        <h1>¡Gracias por tu mensaje, ${nombreUsuario}!</h1>
+        <p>Hemos recibido tus datos correctamente en el servidor.</p>
+        <a href="/">Volver al inicio</a>
+    `);
+});
+
+// ... app.listen(...)
+
 // 4. Iniciar Servidor
 app.listen(3000, () => {
     console.log('Servidor corriendo en http://localhost:3000 🚀');

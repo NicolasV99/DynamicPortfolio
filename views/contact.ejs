@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<section class="container">
+    <h1>Contáctame</h1>
+    <p>Déjame un mensaje y el servidor te responderá.</p>
+
+    <form action="/contact" method="POST" class="contact-form">
+        <div class="form-group">
+            <label for="name">Tu Nombre:</label>
+            <input type="text" id="name" name="userName" required placeholder="Ej. Juan Pérez">
+        </div>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+    </form>
+</section>
+
+<style>
+    .contact-form { background: white; padding: 2rem; border-radius: 8px; max-width: 400px; margin: 20px auto; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    .form-group { margin-bottom: 15px; text-align: left; }
+    input { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 4px; box-sizing: border-box;}
+</style>
+
+<%- include('partials/footer') %>
